@@ -1,0 +1,79 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Published Item Comparer</PackageName>
+      <Author>Velir Studios</Author>
+      <Version>2.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Item Comparer/{3AE1400B-D1EE-4484-B65F-85DDB40AC243}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Item Comparer/Item Compare Command/{ABE5A5DA-BB20-44CD-A90F-55E8C12744D8}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Item Comparer/Item Comparer Panel/{C394A332-6F6C-42E3-A036-AB53A8DA3782}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Chunks/Item Comparer/Target Database Command/{35733370-E308-4B53-BB0A-023CA7A5BA07}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Ribbons/Strips/Publish/Item Comparer/{526D447A-2FF9-4DF2-9BC9-D45EDC3BA17F}/invariant/0</x-item>
+        <x-item>/master/sitecore/system/Modules/Item Comparer Settings/{FE39514A-9818-4167-8F24-1761F4EE1362}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Common/Item Comparer/{02048801-EAD9-497A-A562-00B350C55028}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Common/Item Comparer/Item Comparer Settings/__Standard Values/{71DF87D8-7625-4E5A-B5DF-5578CB1A0906}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Common/Item Comparer/Item Comparer Settings/{34CA12A7-4CC3-4313-BEE4-95133965F176}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Common/Item Comparer/Item Comparer Settings/Settings/{F60F484E-3445-454E-8DE5-D940537590CB}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Common/Item Comparer/Item Comparer Settings/Settings/Database to Compare Against/{2316727A-2DEA-4F52-A6BC-DF929FB6DB86}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Items</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/ItemComparer.config</x-item>
+        <x-item>/bin/Velir.SitecoreLibrary.dll</x-item>
+        <x-item>/bin/Velir.SitecoreLibrary.Modules.PublishedItemComparer.dll</x-item>
+        <x-item>/sitecore modules/Shell/ItemComparer/ItemComparer.css</x-item>
+        <x-item>/sitecore modules/Shell/ItemComparer/ItemComparerViewer.xml</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

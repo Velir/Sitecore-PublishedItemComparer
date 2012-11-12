@@ -1,0 +1,37 @@
+.scUnchangedFieldLabel
+{
+  color:#6487DC;
+  padding: 4px 4px 0px 4px;
+}
+
+.scChangedFieldLabel
+{
+  color:red;
+  padding: 4px 4px 0px 4px;
+}
+
+.scField
+{
+  border:1px solid #dcdcdc;
+  font: 10pt verdana;
+  padding: 1px 2px 1px 2px;
+  margin: 2px 4px 8px 0px;
+}
+
+.infoTable tr {padding:0 0 0 0;margin:0 0 0 0;}
+.infoTable tr td {vertical-align:top; padding:0 0 0 0;margin:0 0 0 0;}
+.infoTable {padding:0 0 0 0;margin:0 0 10px 0;}
+.infoLabel{font-weight:bold;float:left;width:105px;clear:both;}
+.infoText {float:left;}
+.content {padding:0 0 0 15px;}
+.contentHeader {margin:0 0 5px 0;}
+.viewTargetButton button {width:100px;}
+
+.ie #GridContainer {padding: 4px;}
+
+.ff #GridContainer &gt; * {padding: 4px;}
+
+.ff .scToolbutton, .ff .scToolbutton_Down, .ff .scToolbutton_Hover, .ff .scToolbutton_Down_Hover {
+height: 20px;
+float: left;
+}

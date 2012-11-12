@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
+	<ItemComparerViewer>
+		<FormDialog Icon="Business/16x16/index_replace.png" Header="Compare Item With Published Version" Text="Compare an item in the authoring database with the published version of the item. The differences are highlighted." CancelButton="false">
+			<CodeBeside Type="Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomSitecore.Xaml.ItemComparerViewerCodeBeside, Velir.SitecoreLibrary.Modules.PublishedItemComparer" />
+			<link href="/sitecore modules/shell/ItemComparer/ItemComparer.css" rel="stylesheet"/>
+
+			<GridPanel Columns="1" Width="100%" GridPanel.Height="100%" class="infoTable">
+				<div class="contentHeader">
+					<strong>Item Information</strong>
+				</div>
+				<div class="content">
+					<div>
+						<div class="infoLabel">Name:</div>
+						<div class="infoText">
+							<Literal ID="nameLiteral"/>
+						</div>
+					</div>
+
+					<div>
+						<div class="infoLabel">Item Path:</div>
+						<div class="infoText">
+							<Literal ID="itemPathLiteral"/>
+						</div>
+					</div>
+
+					<div>
+						<div class="infoLabel">Template:</div>
+						<div class="infoText">
+							<Literal ID="templatePathLiteral"/>
+						</div>
+					</div>
+
+					<div>
+						<div class="infoLabel">Created:</div>
+						<div class="infoText">
+							<Literal ID="createdLiteral"/>
+						</div>
+					</div>
+
+					<div>
+						<div class="infoLabel">Created By:</div>
+						<div class="infoText">
+							<Literal ID="createdByLiteral"/>
+						</div>
+					</div>
+
+					<div>
+						<div class="infoLabel">Last Modified:</div>
+						<div class="infoText">
+							<Literal ID="lastModifiedLiteral"/>
+						</div>
+					</div>
+
+					<div>
+						<div class="infoLabel">Last Modified By:</div>
+						<div class="infoText">
+							<Literal ID="lastModifiedByLiteral"/>
+						</div>
+					</div>
+				</div>
+			</GridPanel>
+
+			<GridPanel Columns="1" Width="100%" GridPanel.Height="100%" class="infoTable">
+				<div class="contentHeader">
+					<strong>Validation</strong>
+				</div>
+				<div>
+					<Literal ID="infoLiteral"/>
+				</div>
+			</GridPanel>
+
+			<GridPanel Columns="1" Width="100%" GridPanel.Height="100%" class="infoTable">
+				<div class="contentHeader">
+					<strong>Tools</strong>
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td>
+								<Button ID="publishButton">Publish Item</Button>
+							</td>
+							<td class="viewTargetButton">
+								<Button ID="viewTargetItemButton">View Target Item</Button>
+							</td>
+						</tr>
+					</table>
+
+				</div>
+			</GridPanel>
+
+			<Placeholder ID="comparerPlaceholder">
+				<GridPanel Columns="2" Width="100%" Height="70%" GridPanel.Height="100%">
+					<strong>
+						<Literal Width="100%" GridPanel.Width="50%" GridPanel.Style="padding:0px 4px 4px 0px" Text="Authoring Version" />
+					</strong>
+					<strong>
+						<Literal Width="100%" GridPanel.Width="50%" GridPanel.Style="padding:0px 4px 4px 0px" Text="Publishing Target" />
+					</strong>
+
+					<Combobox ID="Version1" Width="100%" GridPanel.Width="50%" GridPanel.Style="padding:0px 4px 4px 0px" Change="#"/>
+					<Combobox ID="PublishingTargets" Width="100%" GridPanel.Width="50%" GridPanel.Style="padding:0px 0px 4px 0px" Change="#"/>
+
+					<Scrollbox ID="GridContainer" Padding="" Background="white" GridPanel.ColSpan="2" GridPanel.Height="100%">
+						<GridPanel ID="Grid" Width="100%" CellPadding="0" Fixed="true">
+						</GridPanel>
+					</Scrollbox>
+
+				</GridPanel>
+			</Placeholder>
+		</FormDialog>
+	</ItemComparerViewer>
+</control>

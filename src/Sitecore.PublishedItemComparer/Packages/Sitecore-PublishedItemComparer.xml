@@ -1,15 +1,15 @@
 <project>
   <Metadata>
     <metadata>
-      <PackageName>Published Item Comparer</PackageName>
-      <Author>Velir Studios</Author>
-      <Version>2.0</Version>
+      <PackageName>Sitecore-PublishedItemComparer</PackageName>
+      <Author>Velir</Author>
+      <Version>2.1</Version>
       <Revision />
       <License />
       <Comment />
       <Attributes />
       <Readme />
-      <Publisher />
+      <Publisher>Velir</Publisher>
       <PostStep />
       <PackageID />
     </metadata>
@@ -33,7 +33,16 @@
       <SkipVersions>False</SkipVersions>
       <Converter>
         <ItemToEntryConverter>
-          <Transforms />
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
         </ItemToEntryConverter>
       </Converter>
       <Include />
@@ -43,10 +52,10 @@
     <xfiles>
       <Entries>
         <x-item>/App_Config/Include/ItemComparer.config</x-item>
-        <x-item>/bin/Velir.SitecoreLibrary.dll</x-item>
-        <x-item>/bin/Velir.SitecoreLibrary.Modules.PublishedItemComparer.dll</x-item>
         <x-item>/sitecore modules/Shell/ItemComparer/ItemComparer.css</x-item>
         <x-item>/sitecore modules/Shell/ItemComparer/ItemComparerViewer.xml</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Commons.dll</x-item>
+        <x-item>/bin/Sitecore.SharedSource.PublishedItemComparer.dll</x-item>
       </Entries>
       <Converter>
         <FileToEntryConverter>

@@ -1,6 +1,6 @@
 ﻿using Sitecore.Data;
 using Sitecore.Data.Items;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.Common.ItemComparer;
+using Sitecore.SharedSource.PublishedItemComparer.CustomItems.Common.ItemComparer;
 
 namespace Sitecore.SharedSource.PublishedItemComparer.Domain
 {

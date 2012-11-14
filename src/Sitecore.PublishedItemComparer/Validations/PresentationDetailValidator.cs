@@ -3,7 +3,7 @@ using Sitecore.Data.Items;
 using Sitecore.Layouts;
 using Sitecore.SharedSource.PublishedItemComparer.Domain;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.Validations
+namespace Sitecore.SharedSource.PublishedItemComparer.Validations
 {
 	public class PresentationDetailValidator : Validator
 	{

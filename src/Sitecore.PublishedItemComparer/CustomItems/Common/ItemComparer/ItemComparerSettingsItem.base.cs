@@ -1,7 +1,7 @@
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.Common.ItemComparer
+namespace Sitecore.SharedSource.PublishedItemComparer.CustomItems.Common.ItemComparer
 {
 	public partial class ItemComparerSettingsItem : CustomItem
 	{

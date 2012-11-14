@@ -1,10 +1,10 @@
 ﻿using Sitecore.Data.Items;
 using Sitecore.Data;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.Common.ItemComparer;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.System;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomSitecore;
+using Sitecore.SharedSource.PublishedItemComparer.CustomItems.Common.ItemComparer;
+using Sitecore.SharedSource.PublishedItemComparer.CustomItems.System;
+using Sitecore.SharedSource.PublishedItemComparer.CustomSitecore;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.Util
+namespace Sitecore.SharedSource.PublishedItemComparer.Utils
 {
 	public class ItemComparerUtil
 	{

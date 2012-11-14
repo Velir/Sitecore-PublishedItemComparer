@@ -1,6 +1,6 @@
 using Sitecore.Data.Items;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.System
+namespace Sitecore.SharedSource.PublishedItemComparer.CustomItems.System
 {
 	public partial class PublishingTargetItem : CustomItem
 	{

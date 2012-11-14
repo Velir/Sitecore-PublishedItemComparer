@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Sitecore.SharedSource.PublishedItemComparer.Domain;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.Validations
+namespace Sitecore.SharedSource.PublishedItemComparer.Validations
 {
 	public abstract class Validator
 	{

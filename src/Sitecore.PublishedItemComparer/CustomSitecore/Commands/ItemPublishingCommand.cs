@@ -1,5 +1,4 @@
 ﻿using System.Collections.Specialized;
-using Sitecore;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Globalization;
@@ -8,7 +7,7 @@ using Sitecore.Shell.Framework.Commands;
 using Sitecore.Web.UI.Sheer;
 using Sitecore.Workflows;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomSitecore.Commands
+namespace Sitecore.SharedSource.PublishedItemComparer.CustomSitecore.Commands
 {
 	public class ItemPublishingCommand : Command
 	{

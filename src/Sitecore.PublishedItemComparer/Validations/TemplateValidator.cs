@@ -2,9 +2,9 @@
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.SharedSource.PublishedItemComparer.Domain;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.Util;
+using Sitecore.SharedSource.PublishedItemComparer.Utils;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.Validations
+namespace Sitecore.SharedSource.PublishedItemComparer.Validations
 {
 	public class TemplateValidator : Validator
 	{

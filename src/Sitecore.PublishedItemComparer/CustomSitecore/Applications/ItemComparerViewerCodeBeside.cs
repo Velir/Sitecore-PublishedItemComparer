@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Sitecore;
 using Sitecore.Collections;
 using Sitecore.Configuration;
 using Sitecore.Data;
@@ -8,6 +7,8 @@ using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Globalization;
 using Sitecore.Publishing;
+using Sitecore.SharedSource.PublishedItemComparer.CustomItems.Common.ItemComparer;
+using Sitecore.SharedSource.PublishedItemComparer.CustomItems.System;
 using Sitecore.SharedSource.PublishedItemComparer.Domain;
 using Sitecore.Text;
 using Sitecore.Text.Diff.View;
@@ -15,11 +16,9 @@ using Sitecore.Web;
 using Sitecore.Web.UI.HtmlControls;
 using Sitecore.Web.UI.Sheer;
 using Sitecore.Web.UI.WebControls;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.Common.ItemComparer;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.System;
 using Version = Sitecore.Data.Version;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomSitecore.Xaml
+namespace Sitecore.SharedSource.PublishedItemComparer.CustomSitecore.Applications
 {
 	public class ItemComparerViewerCodeBeside : BaseForm
 	{

@@ -1,12 +1,11 @@
-﻿using Sitecore;
-using Sitecore.Data.Items;
+﻿using Sitecore.Data.Items;
 using Sitecore.SharedSource.PublishedItemComparer.Domain;
+using Sitecore.SharedSource.PublishedItemComparer.Utils;
 using Sitecore.Shell.Framework.Commands;
 using Sitecore.Text;
 using Sitecore.Web.UI.Sheer;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.Util;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomSitecore.Commands
+namespace Sitecore.SharedSource.PublishedItemComparer.CustomSitecore.Commands
 {
 	public class ItemComparerCommand : Command
 	{

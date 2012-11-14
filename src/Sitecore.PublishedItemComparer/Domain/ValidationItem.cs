@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Web;
 using System.Xml;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.Validations;
+using Sitecore.SharedSource.PublishedItemComparer.Validations;
 
 namespace Sitecore.SharedSource.PublishedItemComparer.Domain
 {

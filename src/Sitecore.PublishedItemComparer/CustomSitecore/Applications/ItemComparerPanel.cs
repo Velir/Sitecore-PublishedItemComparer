@@ -6,7 +6,7 @@ using Sitecore.Shell.Framework.Commands;
 using Sitecore.Shell.Web.UI.WebControls;
 using Sitecore.Web.UI.WebControls.Ribbons;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomSitecore.Commands
+namespace Sitecore.SharedSource.PublishedItemComparer.CustomSitecore.Applications
 {
 	public class ItemComparerPanel : RibbonPanel
 	{

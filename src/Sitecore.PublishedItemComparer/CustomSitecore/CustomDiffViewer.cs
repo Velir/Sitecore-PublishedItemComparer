@@ -9,7 +9,7 @@ using Sitecore.Web.UI.HtmlControls;
 using Sitecore.Web.UI.WebControls;
 using Control = System.Web.UI.Control;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomSitecore
+namespace Sitecore.SharedSource.PublishedItemComparer.CustomSitecore
 {
 	public class CustomDiffViewer : TwoCoumnsDiffView
 	{

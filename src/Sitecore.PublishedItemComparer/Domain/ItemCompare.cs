@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Xml;
+using Sitecore.SharedSource.PublishedItemComparer.CustomItems.Common.ItemComparer;
+using Sitecore.SharedSource.PublishedItemComparer.Utils;
 using log4net;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.Common.ItemComparer;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.Util;
 
 namespace Sitecore.SharedSource.PublishedItemComparer.Domain
 {

@@ -1,8 +1,7 @@
-﻿using Sitecore;
-using Sitecore.Data;
+﻿using Sitecore.Data;
 using Sitecore.Data.Items;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.Common.ItemComparer
+namespace Sitecore.SharedSource.PublishedItemComparer.CustomItems.Common.ItemComparer
 {
 	public partial class ItemComparerSettingsItem
 	{

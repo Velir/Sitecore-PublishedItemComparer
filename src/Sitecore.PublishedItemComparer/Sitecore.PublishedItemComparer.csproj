@@ -77,16 +77,15 @@
     <Compile Include="Validations\Validator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CustomSitecore\Applications\PublishedItemDiffViewer.css" />
-    <Content Include="CustomSitecore\Applications\PublishedItemDiffViewer.xml" />
     <Content Include="readme.txt" />
-    <Content Include="Packages\ItemComparer.xml" />
+    <Content Include="Website\sitecore modules\Shell\ItemComparer\ItemComparer.css" />
+    <Content Include="Website\sitecore modules\Shell\ItemComparer\ItemComparerViewer.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Packages\Item Comparer-1.0.zip" />
+    <Folder Include="Packages\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Website\" />
+    <None Include="Website\App_Config\Include\ItemComparer.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

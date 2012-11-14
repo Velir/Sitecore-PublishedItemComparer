@@ -1,11 +1,11 @@
 ﻿using Sitecore.Data;
 using Sitecore.Data.Items;
+using Sitecore.SharedSource.PublishedItemComparer.CustomItems.Common.ItemComparer;
+using Sitecore.SharedSource.PublishedItemComparer.CustomItems.System;
 using Sitecore.Shell.Framework.Commands;
 using Sitecore.Text;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.Common.ItemComparer;
-using Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomItems.System;
 
-namespace Velir.SitecoreLibrary.Modules.PublishedItemComparer.CustomSitecore.Commands
+namespace Sitecore.SharedSource.PublishedItemComparer.CustomSitecore.Commands
 {
 	public class TargetDatabaseCommand : Command
 	{

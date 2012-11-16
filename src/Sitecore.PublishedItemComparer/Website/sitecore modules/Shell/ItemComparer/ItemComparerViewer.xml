@@ -2,7 +2,7 @@
 <control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
 	<ItemComparerViewer>
 		<FormDialog Icon="Business/16x16/index_replace.png" Header="Compare Item With Published Version" Text="Compare an item in the authoring database with the published version of the item. The differences are highlighted." CancelButton="false">
-			<CodeBeside Type="Sitecore.SharedSource.PublishedItemComparer.CustomSitecore.Xaml.ItemComparerViewerCodeBeside, Sitecore.SharedSource.PublishedItemComparer" />
+			<CodeBeside Type="Sitecore.SharedSource.PublishedItemComparer.CustomSitecore.Applications.ItemComparerViewerCodeBeside, Sitecore.SharedSource.PublishedItemComparer" />
 			<link href="/sitecore modules/shell/ItemComparer/ItemComparer.css" rel="stylesheet"/>
 
 			<GridPanel Columns="1" Width="100%" GridPanel.Height="100%" class="infoTable">

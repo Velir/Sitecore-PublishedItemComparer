@@ -18,10 +18,17 @@ namespace Sitecore.SharedSource.PublishedItemComparer.Validations
 
 			//check to see if the item exists in the target database which 
 			//was specified in the settings item
-			Item publishedItem = context.TargetDatabase.GetItem(context.Item.ID);
+			Item publishedItem = context.TargetDatabase.GetItem(context.Item.ID, context.Item.Language);
 			if (publishedItem == null)
 			{
 				outputs.Add("The item does not exist in the target database.");
+				return outputs;
+			}
+
+			//Check if we have a version for the current language
+			if(publishedItem.Versions.Count == 0)
+			{
+				outputs.Add("The item does not have a version in the selected language");
 				return outputs;
 			}
 

@@ -18,7 +18,7 @@ namespace Sitecore.SharedSource.PublishedItemComparer.Validations
 
 			//check to see if the item exists in the target database which 
 			//was specified in the settings item
-			Item publishedItem = context.TargetDatabase.GetItem(context.Item.ID);
+			Item publishedItem = context.TargetDatabase.GetItem(context.Item.ID, context.Item.Language);
 			if (publishedItem == null)
 			{
 				outputs.Add("The item does not exist in the target database.");

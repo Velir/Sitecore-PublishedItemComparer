@@ -1,8 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
+using Sitecore.Globalization;
 using Sitecore.SharedSource.PublishedItemComparer.Domain;
 using Sitecore.SharedSource.PublishedItemComparer.Utils;
+using Sitecore.Web;
 
 namespace Sitecore.SharedSource.PublishedItemComparer.Validations
 {
@@ -11,7 +16,25 @@ namespace Sitecore.SharedSource.PublishedItemComparer.Validations
 		public override List<string> Validate(ItemComparerContext context)
 		{
 			//only run on templates
-			if (context.Item.TemplateID.ToString() != "{AB86861A-6030-46C5-B394-E8F99E8B87DB}") return new List<string>();
+			if (context.Item.TemplateID.ToString() != "{AB86861A-6030-46C5-B394-E8F99E8B87DB}")
+			{
+				return new List<string>();
+			}
+
+			SiteInfo shellSite = Factory.GetSiteInfoList().FirstOrDefault(x => x.Name == "shell");
+			if (shellSite != null)
+			{
+				//templates are only run in the default language
+				if (!context.Item.Language.Name.Equals(shellSite.Language, StringComparison.InvariantCultureIgnoreCase))
+				{
+					context.Item = context.TargetDatabase.GetItem(context.Item.ID, Language.Parse(shellSite.Language));
+				}
+			}
+
+			if (context.Item == null)
+			{
+				return new List<string>();
+			}
 
 			//defaults
 			List<string> outputs = new List<string>();

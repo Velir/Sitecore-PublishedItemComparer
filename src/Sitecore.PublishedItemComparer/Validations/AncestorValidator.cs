@@ -15,7 +15,7 @@ namespace Sitecore.SharedSource.PublishedItemComparer.Validations
 			//check ancestors to see if they exist in the target database
 			foreach (Item ancestorItem in context.Item.Axes.GetAncestors())
 			{
-				Item targetAncestorItem = context.TargetDatabase.GetItem(ancestorItem.ID);
+				Item targetAncestorItem = context.TargetDatabase.GetItem(ancestorItem.ID, context.Item.Language);
 				if (targetAncestorItem == null)
 				{
 					outputs.Add(string.Format("The ancestor ({0}) does not exist in the target database", ancestorItem.Name));

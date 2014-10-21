@@ -25,6 +25,13 @@ namespace Sitecore.SharedSource.PublishedItemComparer.Validations
 				return outputs;
 			}
 
+			//Check if we have a version for the current language
+			if(publishedItem.Versions.Count == 0)
+			{
+				outputs.Add("The item does not have a version in the selected language");
+				return outputs;
+			}
+
 			//we are not on a template, compare only the current item
 			//if the item is the same, pass validation
 			if (!ItemComparerUtil.Validate(context.Item, publishedItem))
